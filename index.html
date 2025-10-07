@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Certificates | Bhaskar Kushwah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>🎓 My Certificates</h1>
+    <nav>
+      <ul>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to My Achievement Showcase</h2>
+    <p>Here you'll find my verified certificates, awards, and other professional documents.</p>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="gallery">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <!-- Example Certificate Cards -->
+      <div class="card" onclick="openModal('img/cert1.jpg')">
+        <img src="img/cert1.jpg" alt="Certificate 1">
+        <h3>DevOps Internship</h3>
+        <p>Issued by Elevate Labs</p>
+      </div>
+
+      <div class="card" onclick="openModal('img/cert2.jpg')">
+        <img src="img/cert2.jpg" alt="Certificate 2">
+        <h3>Amazon Web Service Essentials</h3>
+        <p>Issued by AWS Skillbuilder</p>
+      </div>
+
+      <div class="card" onclick="openModal('img/cert3.jpg')">
+        <img src="img/cert3.jpg" alt="Certificate 3">
+        <h3>Python, MySql, mongoDB & Data Analysis</h3>
+        <p>Stanford Online</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents Section -->
+  <section id="documents" class="gallery">
+    <h2>Documents</h2>
+    <div class="grid">
+      <div class="card">
+        <iframe src="docs/resume.pdf" title="Resume"></iframe>
+        <h3>Resume</h3>
+        <a href="docs/resume.pdf" target="_blank" class="btn">View PDF</a>
+      </div>
+
+      <div class="card">
+        <iframe src="docs/degree.pdf" title="Degree Certificate"></iframe>
+        <h3>Degree Certificate</h3>
+        <a href="docs/degree.pdf" target="_blank" class="btn">View PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Image Preview -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <img id="modalImg" src="" alt="Certificate preview">
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Made with ❤️ by <strong>Bhaskar Kushwah</strong></p>
+    <p>Connect: 
+      <a href="https://github.com/bhaskar-2001" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/bhaskar-2001/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
